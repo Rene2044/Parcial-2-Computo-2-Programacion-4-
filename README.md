@@ -23,3 +23,18 @@ Errores del Servidor: Mostrar errores como "Fatal error" revela la estructura de
 
 Solución: Desactivar la visualización de errores (display_errors = Off) en el entorno de producción.
 
+Tabla: usuarios
+| Columna | Tipo de dato || Límite | Descripción |
+| :--- | :--- || :--- | :--- |
+| id | INT || N/A | Identificador único |
+| email | VARCHAR || 100 | Correo de acceso |
+| password | VARCHAR || 255 | Clave cifrada |
+
+Tabla: productos
+| Columna | Tipo de dato || Límite | Descripción |
+| :--- | :--- || :--- | :--- |
+| id | INT || N/A | Identificador único |
+| nombre | VARCHAR || 100 | Nombre del producto |
+| categoria | VARCHAR || 100 | Clasificación |
+| cantidad | INT || N/A | Stock actual |
+| precio | DECIMAL || (10,2) | Valor unitario |
