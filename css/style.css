@@ -1,0 +1,60 @@
+/* 1. Reset básico para que no haya márgenes extraños */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Centrado perfecto de todo el cuerpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hwb(231 18% 24%); /* Un gris muy claro profesional */
+}
+
+/* 3. Contenedor del formulario (La caja blanca) */
+.login-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* 4. Estilo de los encabezados */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 5. Estilos para los campos de texto (input) */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 6. Estilo del botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Azul profesional */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Un azul más oscuro al pasar el mouse */
+}
