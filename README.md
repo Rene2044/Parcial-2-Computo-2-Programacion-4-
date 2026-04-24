@@ -38,3 +38,28 @@ Tabla: productos
 | categoria | VARCHAR || 100 | Clasificación |
 | cantidad | INT || N/A | Stock actual |
 | precio | DECIMAL || (10,2) | Valor unitario |
+
+CREATE DATABASE IF NOT EXISTS despensa_donjuan;
+USE despensa_donjuan;
+
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+
+INSERT INTO usuarios (email, password) VALUES ('admin@donjuan.com', '12345678');
+
+
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    categoria VARCHAR(100) NOT NULL,
+    cantidad INT NOT NULL,
+    precio DECIMAL(10,2) NOT NULL
+);
+
+USUARIO: admin@donjuan.com
+Contraseña: 12345678
