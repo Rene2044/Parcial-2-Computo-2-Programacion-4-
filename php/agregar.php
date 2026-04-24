@@ -1,6 +1,6 @@
 <?php
 // Asegúrate de que este archivo y conexion.php estén en la misma carpeta
-include 'conexion.php';
+include '/phpconexion.php';
 
 // Verificación de seguridad
 if (!isset($conexionsql)) {

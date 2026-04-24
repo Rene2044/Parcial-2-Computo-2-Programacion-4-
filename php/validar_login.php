@@ -1,6 +1,6 @@
 <?php
 // 1. Incluimos la conexión aquí, porque aquí sí vamos a consultar la BD
-include 'conexion.php'; 
+include '/phpconexion.php'; 
 
 // 2. Recibimos los datos del formulario
 $email = $_POST['email'];
